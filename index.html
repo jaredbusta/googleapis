@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando google maps</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUfD8D4-bBOdZ5fUg-H74BY1f-KpD56Ws&callback=initMap"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-    hola que tal
+    <div id="map"></div>
+
+    <div>
+        <input type="number" placeholder="Latitud"  value="29.11911519796352"  id="lat"/>
+        <input type="number" placeholder="Longitud" value="-110.9860431925739" id="lon"/>
+        <input type="text" placeholder="Titulo" id="title"/>
+        <textarea placeholder="Descricion aqui" id="descripcion" cols="15" rows="3"> hola que tal, este es el contenido de la marca </textarea>
+
+        
+    </div >
+
+    <div class="button_action">
+        <button onclick="crear_marca()" >Marcar</button>
+        <button onclick="customMark()">Custom</button>
+        <button onclick="addLocationButton()">Add button on map</button>
+    </div>
 </body>
 </html>
